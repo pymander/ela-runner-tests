@@ -1,0 +1,25 @@
+{
+  "callbacks": [
+    {
+      "level": "DEBUG",
+      "url": "http://4f8955be.proxy.webhookapp.com/"
+    }
+  ],
+  "description": "First Playbook Sample",
+  "repository": {
+    "branch": "master",
+    // "credentials": {
+    //   "password": "string",
+    //   "username": "string"
+    // },
+    "defaultPlaybook": "helloworld.yml",
+    "url": "https://github.com/pymander/ela-runner-tests"
+  },
+  "useDynamicInventory": true,
+  "hosts":[
+    {
+      "id":"localhost",
+      "hostVars":{"ansible_connection":"local"}
+    }
+  ]
+}
